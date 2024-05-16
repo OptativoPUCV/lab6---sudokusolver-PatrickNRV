@@ -25,3 +25,26 @@ sudoku.c:48:26: error: unused variable ‘col’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 a341efb
+Thu 16 May 2024 04:02:33 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:57:23: error: unused variable ‘k’ [-Werror=unused-variable]
+   57 |                   int k = (i / 3) * 3 + j / 3;
+      |                       ^
+sudoku.c:56:23: error: unused variable ‘num’ [-Werror=unused-variable]
+   56 |                   int num = n->sudo[i][j] - 1;
+      |                       ^~~
+sudoku.c:49:15: error: unused variable ‘k’ [-Werror=unused-variable]
+   49 |     int i, j, k;
+      |               ^
+sudoku.c:48:43: error: unused variable ‘box’ [-Werror=unused-variable]
+   48 |     int row[9][9] = {0}, col[9][9] = {0}, box[9][9] = {0};
+      |                                           ^~~
+sudoku.c:48:26: error: unused variable ‘col’ [-Werror=unused-variable]
+   48 |     int row[9][9] = {0}, col[9][9] = {0}, box[9][9] = {0};
+      |                          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+344b702
