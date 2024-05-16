@@ -57,10 +57,7 @@ int is_valid(Node* n)
                   int k = (i / 3) * 3 + j / 3;
                   if(row[i][n->sudo[i][j]-1] == 1)
                       return 0;
-                   else
-                   {
-                      row[i][n->sudo[i][j]-1] = 1;
-                   }
+                  row[i][n->sudo[i][j]-1] = 1;
                 }
              }
        }
